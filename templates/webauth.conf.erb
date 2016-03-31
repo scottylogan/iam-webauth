@@ -1,0 +1,9 @@
+WebAuthLoginURL https://<%= @webkdc %>/login
+WebAuthWebKdcURL https://<%= @webkdc %>/webkdc-service
+WebAuthWebKdcPrincipal service/webkdc@<%= @domain %>
+WebAuthSSLRedirect on
+
+WebAuthLdapHost <%= @ldap %>
+WebAuthLdapBase <%= @base_dn %>
+
+WebAuthLdapAuthorizationAttribute <%= @authz_attr %>
